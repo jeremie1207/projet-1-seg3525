@@ -1,0 +1,66 @@
+/**
+define variables
+*/
+
+:root{
+    --sky-blue:#32B8DA;  
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/***
+header-top
+*/
+.header_top{
+ background-color: var(--sky-blue);
+}
+
+.header_top p, i {
+    margin-left: .7em;
+}
+
+/**
+navbar
+*/
+
+
+.logo-text, .logo-image{
+    display: inline;
+}
+
+.logo-image{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+/**
+ Header bootom
+*/
+
+.header-bootom{
+    background: linear-gradient(180deg, #32B8DA 56.77%, rgba(196, 196, 196, 0) 100%);
+    background-blend-mode: darken;
+    padding: 10em;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    /**
+    Header bootom
+    */
+    .header-bootom{
+      padding: 5em;
+    }
+}
+
