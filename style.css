@@ -47,8 +47,42 @@ navbar
 .header-bootom{
     background: linear-gradient(180deg, #32B8DA 56.77%, rgba(196, 196, 196, 0) 100%);
     background-blend-mode: darken;
-    padding: 10em;
+    padding: 10rem;
+
 }
+
+/**
+ service
+*/
+
+.service{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+/**
+title
+*/
+.title{
+    font-weight: 900;
+}
+
+
+/**
+Service Page
+*/
+.img-service{
+    width: 100%;
+}
+
+.service-header .title, .price{
+    margin: 1rem 0;
+}
+
+
+
+
 
 
 
@@ -60,7 +94,7 @@ navbar
     Header bootom
     */
     .header-bootom{
-      padding: 5em;
+      padding: 4rem;
     }
 }
 
