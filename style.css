@@ -63,7 +63,7 @@ navbar
  service
 */
 
-.service{
+.service, .teams{
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
@@ -118,6 +118,7 @@ formulaire
 .elem-form{
     margin: .5rem 0;
     width: 80%;
+    border-radius: 4px;
     
 }
 
@@ -135,7 +136,7 @@ formulaire
 }
 
 .btn-submit:hover{
-    background-color: var(--blue);
+    background-color: transparent;
     border: white 1px solid;
 }
 
@@ -155,6 +156,18 @@ confirmation page
     font-size: 3rem;
 }
 
+.elem-form-feedback{
+    width: 40%;
+    border-radius: 4px;
+}
+.btn-submit-feedback{
+    background-color: var(--green);
+    color: white;
+}
+.btn-submit-feedback:hover{
+    opacity: .9;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -164,6 +177,10 @@ confirmation page
     */
     .header-bootom{
       padding: 4rem;
+    }
+
+    .elem-form-feedback{
+        width: 80%;
     }
    
 }
