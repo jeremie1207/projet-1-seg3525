@@ -52,6 +52,12 @@
                 <li class="nav-item">
                   <a class="nav-link font-weight-bold" href="#">Contact</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="#">Feedback</a>
+                </li>
+                <li class="nav-item btn-mk-appointment-top">
+                  <a class="nav-link font-weight-bold btn btn-my-green" href="#make-an-appointement" role="button">Prendre rendez-vous</a>
+                </li>
               </ul>
             </div>
         </div>
@@ -122,7 +128,7 @@
         <div class="card">
           <img class="card-img-top" src="Images/extraction-dentaire.jpeg" alt="extraction-dentaire">
           <div class="card-body">
-            <h5 class="card-title tit">Extraction dentaire</h5>
+            <h5 class="card-title title">Extraction dentaire</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum neque augue, 
               nec congue risus ultrices vitae. 
               Aliquam ultrices elit sit amet nibh blandit molestie. Donec efficitur non dui malesuada eleifend. 
@@ -134,9 +140,69 @@
       </div>
     </div>
 
-    
+    <!--Rendez-vous et Heure d'Ouverture-->
+    <div class="container mk-appointement-section-and-open-hours text-white">
+     <div class="d-lg-flex">
+          <div class="open-hours">
+          <h5 class="font-weight-bold title-mk">Heures d'ouverture</h5>
+          <p>Lundi : 8:00-17:00</p>
+          <p>Mardi : 8:00-17:00</p>
+          <p>Mercredi : 8:00-17:00</p>
+          <p>Jeudi : 8:00-17:00</p>
+          <p>Vendredi : 8:00-17:00</p>
+          <p>Samedi : 9:30-17:30</p>
+          <p>Dimanche : 9:30-17:00</p>
+          <p>Jour Ferié : Fermé</p>
+        </div>
+        <div class="mk-appointment">
+          <h5 class="font-weight-bold title-mk width-75" id="make-an-appointement">Prendre rendez-vous</h5>
+          <form action="" method="get" id="forms">
+            <div>
+              <input type="text" name ="fullname" placeholder="Prenom et nom de famille" class="elem-form" id ="fullname" required><br>
+              <p id="error_full_name" class="text-danger"></p>
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Adresse couriel" class="elem-form" id="email" required><br>
+              <p id="error_email" class="text-danger"></p>
+            </div>
+            <div>
+              <input type="date" name="" class="elem-form" id="date" required><br>
+              <p id="error_date" class="text-danger"></p>
+            </div>
+            
+            <div>
+              <textarea name="" id="" placeholder="Message(Optionnel)" class="elem-form"></textarea><br>
+            </div>
+           
+            <div>
+              <fieldset>      
+                <legend>Comment pouvons-nous vous aidez ?</legend>      
+                <input type="checkbox" name="service" value="Blanchiment de dent" id="white_teeth">Blanchiment de dent<br>      
+                <input type="checkbox" name="service" value="Implant dentaire" id="i_teeth">Implant dentaire<br>      
+                <input type="checkbox" name="service" value="Traitement canal" id="canal">Traitement canal<br>    
+                <input type="checkbox" name="service" value="Extraction dentaire" id="e_teeth">Extraction dentaire<br>   
+                <p class="text-danger" id="error_checkbox"></p>      
+            </fieldset>  
+            </div>
+           
+            <div>
+              <input type="submit" name="" id="" class="btn-submit" ><br>
+            </div>
+            
+
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
     
 
+
+    
+
+    
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

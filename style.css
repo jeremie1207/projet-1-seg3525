@@ -3,7 +3,9 @@ define variables
 */
 
 :root{
-    --sky-blue:#32B8DA;  
+    --sky-blue:#32B8DA; 
+    --green:#5BECC9; 
+    --blue : #95EEF4;
 }
 
 body{
@@ -35,10 +37,16 @@ navbar
     width: 2.5rem;
 }
 
-
-.nav-link:hover{
-    text-decoration: underline;
+.btn-my-green{
+    background-color: var(--green);
+    color:white;
 }
+
+.btn-my-green:hover{
+    opacity: .8;
+}
+
+
 
 /**
  Header bootom
@@ -83,12 +91,73 @@ Service Page
 
 
 
+/**
+Open hours and Make an appointementh
+*/
+.open-hours{
+    background-color: var(--sky-blue);
+    padding: 3rem;
+}
+
+.mk-appointment{
+    background-color: var(--blue);
+    padding: 3rem;
+}
+.title-mk{
+    margin: 1rem 0;
+}
+.width-75{
+    width: 58.5vw;
+}
+
+
+/**
+formulaire
+*/
+
+.elem-form{
+    margin: .5rem 0;
+    width: 80%;
+    
+}
+
+.btn-submit{
+    background-color: var(--green); /* Green */
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn-submit:hover{
+    background-color: var(--blue);
+    border: white 1px solid;
+}
+
+legend{
+    font-size: 1rem;
+}
+
+/**
+confirmation page
+*/
+
+.height-100vh{
+    height: 100vh;
+}
+
+.ts{
+    font-size: 3rem;
+}
 
 
 
-
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 
     /**
     Header bootom
@@ -96,5 +165,6 @@ Service Page
     .header-bootom{
       padding: 4rem;
     }
+   
 }
 
