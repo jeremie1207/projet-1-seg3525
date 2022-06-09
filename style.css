@@ -126,7 +126,7 @@ Open hours and Make an appointementh
     margin: 1rem 0;
 }
 .width-75{
-    width: 58.5vw;
+    width: 50rem;
 }
 
 
@@ -211,6 +211,10 @@ footer{
 
     .elem-form-feedback{
         width: 80%;
+    }
+
+    .width-75{
+        width: 100%;
     }
    
 }
